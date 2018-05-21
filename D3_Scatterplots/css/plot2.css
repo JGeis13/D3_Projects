@@ -1,0 +1,39 @@
+body {
+  margin: 10px;
+  text-align: center;
+}
+
+line {
+  stroke: lightgrey;
+  stroke-dasharray: 8, 2;
+  shape-rendering: crispEdges;
+}
+
+circle {
+  stroke: white;
+}
+
+.tooltip {
+  background: slategray;
+  font-size: 0.8rem;
+  color: black;
+  position: absolute;
+  padding: 5px;
+  pointer-events: none;
+}
+
+.tooltip span {font-weight: bold;}
+
+.key {
+  width: 200px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 20px auto 0;
+}
+
+.gradient {
+  background: linear-gradient(90deg, red 0%, navy 100%);
+  width: 95%;
+  height: 20px;
+  margin: 0 auto 5px;
+}

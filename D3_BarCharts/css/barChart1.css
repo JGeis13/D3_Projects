@@ -1,0 +1,17 @@
+body {margin: 5px;}
+
+svg, input {
+  margin: 0 auto 10px;
+  display: block;
+}
+
+text {text-anchor: middle;}
+rect { fill: grey;}
+
+.highest {
+  fill: red;
+}
+
+.lowest {
+  fill: blue;
+}
