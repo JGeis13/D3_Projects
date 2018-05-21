@@ -1,0 +1,10 @@
+body {text-align: center}
+
+svg, input {
+  margin: 0 auto;
+  display: block;
+}
+
+text {
+  text-anchor: middle;
+}
