@@ -1,9 +1,11 @@
 # D3_Projects
-Repo for D3 tutorials and practice projects.
+### Repo for D3 tutorials and practice projects.
 
 
-Histogram
+#### Histograms
 
-Pie Chart
+#### Pie Charts
 
-Scatterplot
+#### Scatterplots
+
+#### Bar Charts
