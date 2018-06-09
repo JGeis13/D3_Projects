@@ -1,0 +1,84 @@
+body {
+  margin: 10px;
+  text-align: center;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.tooltip {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  background: #9EB3C2;
+  border-radius: 8px;
+  color: white;
+  padding: 5px;
+  box-shadow: 2px 2px 11px -2px rgba(0,0,0,0.75);
+  font-weight: 200;
+  min-width: 271px;
+}
+
+.tooltip h3 {
+  margin: 2px 0 4px 0;
+  font-weight: 400;
+}
+.tooltip p {
+  margin: 2px;
+}
+
+.tooltip span {
+  font-weight: bold;
+}
+
+.tooltip:before {
+  content: " ";
+  position: absolute;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #9EB3C2 transparent transparent;
+  top: 50%;
+  left: -20px;
+  margin-top: -10px;
+}
+
+text {
+  fill: #21295C;
+}
+
+path, .tick line {
+  stroke: #9EB3C2;
+}
+
+.tick text {
+  fill: #9EB3C2;
+}
+
+.color-scale {
+  width: 200px;
+}
+.color-scale div {
+  background: linear-gradient(to right, #dfe0e2 0%,#21295c 100%);
+  width: 90%;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.size-scale {
+  width: 200px;
+  /* border: 1px solid black; */
+  padding-top: 1px;
+}
+
+.size-scale svg {
+  width: 100%;
+  height: 62px;
+}
+
+.size-scale p {
+  margin: 2px 0;
+}
+
+.scale {
+  display: inline-block;
+  margin-top: 50px;
+}

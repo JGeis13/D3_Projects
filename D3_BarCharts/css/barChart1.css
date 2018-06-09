@@ -6,12 +6,14 @@ svg, input {
 }
 
 text {text-anchor: middle;}
-rect { fill: grey;}
+rect { fill: grey; transition: fill 0.5s;}
 
 .highest {
   fill: red;
+  transition: fill 0.5s;
 }
 
 .lowest {
   fill: blue;
+  transition: fill 0.5s;
 }

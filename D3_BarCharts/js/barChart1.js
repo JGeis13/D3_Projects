@@ -53,8 +53,6 @@ d3.select('input')
     let year = +d3.event.target.value;
     d3.selectAll('rect')
       .data(birthData.filter(d => d.year === year))
-      .attr('height', d => height - yScale(d.births))
-      .attr('y', d => yScale(d.births))
       .classed('highest', d => {
         let max = d3.max(birthData.filter(x => x.year === year), b => b.births);
         return d.births === max;
@@ -62,10 +60,15 @@ d3.select('input')
       .classed('lowest', d => {
         let min = d3.min(birthData.filter(x => x.year === year), b => b.births);
         return d.births === min;
-      });
+      })
+      .transition()
+      .attr('height', d => height - yScale(d.births))
+      .attr('y', d => yScale(d.births));
+      
 
     d3.selectAll('text')
       .data(birthData.filter(d => d.year === year))
+      .transition()
       .attr('x', (d, i) => (barWidth + barPadding) * i + barWidth / 2)
       .attr('y', d => yScale(d.births))
       .text(d => shortenNum(d.births));

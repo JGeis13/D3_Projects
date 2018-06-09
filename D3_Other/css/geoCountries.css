@@ -1,0 +1,22 @@
+svg, select {
+  margin: 0 auto;
+  display: block;
+}
+
+path {
+  stroke: #ccc;
+  stroke-width: 0.25px;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  background: grey;
+  opacity: 0;
+  pointer-events: none;
+  
+}
+
+.tooltip p {
+  margin: 5px;
+}
